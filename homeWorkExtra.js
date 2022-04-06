@@ -67,7 +67,7 @@ console.log("\n------------EXTRA 5------------\n");
 
 /* WRITE YOUR ANSWER HERE */
 
-const array4 = [8, 3, 2, 4, 9, 23, 5, 11, 6, 17, 7];
+let array4 = [8, 3, 2, 4, 9, 23, 5, 11, 6, 17, 7];
 
 for (let i = 0; i < array4.length; i++) {
   if (array4[i] % 2 == 1) {
