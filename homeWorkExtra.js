@@ -67,15 +67,13 @@ console.log("\n------------EXTRA 5------------\n");
 
 /* WRITE YOUR ANSWER HERE */
 
-const array4 = [8, 3, 2, 4, 9, 23, 5, 11, 17, 7];
+const array4 = [8, 3, 2, 4, 9, 23, 5, 11, 6, 17, 7];
 
 for (let i = 0; i < array4.length; i++) {
   if (array4[i] % 2 == 1) {
+    console.log(array4[i]);
     delete array4[i];
-
-    //array4.splice(evan);
-    //console.log(array4.splice(array4[i], 1));
-    //console.log(delete array4[i]);
+    //array4.splice(array4[i]);
   }
 }
 console.log(array4);
