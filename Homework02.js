@@ -7,14 +7,14 @@ ASSIGNMENT RULES
 - You can use the bash terminal, the VSCode terminal or the one embedded in your Operating System if you're using macOS or Linux.
 - The solution must be available for the tutors by the end of the day (5PM CET)
 */
-
+console.log("\n------------EXERCISE 1------------\n");
 /* EXERCISE 1
  Create a variable and assign to it an array containing the first 5 positive numbers.
 */
 
 /* WRITE YOUR ANSWER HERE */
 let num = [1, 3, 6, 8, 9];
-
+console.log("\n------------EXERCISE 2------------\n");
 /* EXERCISE 2
  Create a variable and assign to it an object containing your name, surname, email address and age.
 */
@@ -23,10 +23,10 @@ let num = [1, 3, 6, 8, 9];
 let person = {
   name: "Sidath",
   surname: "Dabare",
-  email: "example#@email.com",
+  email: "example1@email.com",
   age: 35,
 };
-
+console.log("\n------------EXERCISE 3------------\n");
 /* EXERCISE 3
  Add to the previously created object a property with a boolean value to rappresent wheter you have or not a driving license.
 */
@@ -34,18 +34,32 @@ let person = {
 /* WRITE YOUR ANSWER HERE */
 person.hasDrivingLicense = true;
 console.log(person);
+console.log("\n------------EXERCISE 4------------\n");
 /* EXERCISE 4
  Remove from the previously created object the age property.
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+delete person.age;
+console.log(person);
+console.log("\n------------EXERCISE 5------------\n");
 /* EXERCISE 5
  Create a second object with another name, surname, email address and verify that this object has a different email address than the previous one.
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+let person1 = {
+  name: "Jhon",
+  surname: "Doe",
+  email: "example@email.com",
+  age: 35,
+};
+if (person.email == person1.email) {
+  console.log("Same email");
+} else {
+  console.log("Different email");
+}
+console.log("\n------------EXERCISE 6------------\n");
 /* EXERCISE 6
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
  Currently you have a promotion: if the customer's shopping cart total is more than 50, the user is eligible for free shipping (otherwise it costs 10).
@@ -53,14 +67,30 @@ console.log(person);
 */
 
 /* WRITE YOUR ANSWER HERE */
+let totalShoppingCart = 50;
+let amountSpent = 41;
+if (amountSpent > totalShoppingCart) {
+  console.log("Free shipping");
+} else {
+  console.log("Shipping cost $10");
+}
 
+console.log("\n------------EXERCISE 7------------\n");
 /* EXERCISE 7
  You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
  Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+let discount = (amountSpent / 100) * 20;
+let newTotal = discount + amountSpent;
+if (amountSpent > totalShoppingCart) {
+  console.log("Free shipping for total more than $: " + newTotal);
+} else {
+  console.log("Your total $: " + newTotal + "+ Shipping cost $10");
+}
+console.log(newTotal);
+console.log("\n------------EXERCISE 8------------\n");
 /* EXERCISE 8
  Create a variable and assign to it an object representing a car, with properties like brand, model and licensePlate.
  Then clone it 5 times, and change the licensePlate for each cloned car without affecting the original one.

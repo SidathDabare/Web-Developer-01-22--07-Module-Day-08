@@ -15,9 +15,15 @@
 */
 
 /* WRITE YOUR ANSWER HERE */
-// const array1 = [1, 3, 2, 7, 9, 23, 5];
-
-// console.log(Math.max(...array1));
+const array1 = [1, 3, 2, 7, 9, 23, 5];
+let max = 0;
+for (let i = 0; i < array1.length; i++) {
+  if (array1[i] > max) {
+    max = array1[i];
+  }
+  console.log(array1[i], "is samaller than", max);
+}
+console.log(max);
 
 /* EXTRA 3
  Write a piece of code for getting the minimum numerical value from an array.
@@ -31,12 +37,12 @@
 */
 
 /* WRITE YOUR ANSWER HERE */
-let array2 = [1, 3, 2, 7, 9, 23, 5];
-for (let index = 0; index < students.length; index++) {
-  students[index].age += 1;
-}
+// let array2 = [1, 3, 2, 7, 9, 23, 5];
+// for (let index = 0; index < students.length; index++) {
+//   students[index].age += 1;
+// }
 
-console.log(students);
+// console.log(students);
 
 /* EXTRA 5
  Write a piece of code for deleting only even entries from an array.
